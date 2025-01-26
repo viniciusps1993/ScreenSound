@@ -1,20 +1,7 @@
-﻿Banda queen = new Banda();
-queen.Nome = "Queen";
+﻿Episodio ep1 = new(4, "Técnicas de Facilitação", 45);
+Console.WriteLine(ep1.Resumo);
 
-Album albumDoQueen = new Album();
-albumDoQueen.NomeAlbum = "A night at the opera";
+ep1.AdicionarConvidados("Maria");
+ep1.AdicionarConvidados("Marcelo");
 
-Musica musica1 = new Musica(queen);
-musica1.Nome = "Love of my life";
-musica1.Duracao = 231;
-
-
-Musica musica2 = new Musica(queen);
-musica2.Nome = "Bohemian Rhapsody";
-musica2.Duracao = 354;
-
-albumDoQueen.AdicionarMusica(musica1);
-albumDoQueen.AdicionarMusica(musica2);
-
-queen.AdicionarAlbum(albumDoQueen);
-queen.ExibirDiscografia();
+Console.WriteLine(ep1.Resumo);
