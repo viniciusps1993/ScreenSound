@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿class Musica
+class Musica
 {
     public Musica(Banda artista, string nome)
     {
@@ -8,16 +7,6 @@
     }
 
     public string Nome { get; }
-=======
-﻿class Musica 
-{   
-    
-    public Musica(Banda artista)
-    {
-        Artista = artista;
-    }
-    public string Nome {  get; set; }
->>>>>>> criacao-da-classe-podcast
     public Banda Artista { get; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
